@@ -1,0 +1,138 @@
+body {
+    background-color: #444;
+}
+
+
+
+/* headedr o nas */
+header.about {
+    display: flex;
+    margin-top: 90px;
+}
+
+header.about .first {
+    flex-basis: 30%;
+    text-align: right;
+    font-size: 40px;
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header.about .second {
+    background-color: #000;
+    flex-grow: 1;
+}
+
+
+section {
+    margin-top: 50px;
+}
+
+.content {
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.containerimg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerimg .img {
+    flex-basis: 24%;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* .img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+} */
+
+.img .infoimg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    transition: .5s;
+}
+
+.img .infoimg h2 {
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+}
+
+.img .infoimg p {
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+@media(max-width:960px) {
+    .containerimg .img {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        height: 50vw;
+    }
+
+    .containerimg {
+        flex-wrap: wrap;
+    }
+
+    .img .infoimg {
+        top: 85%;
+    }
+
+}
+
+@media(max-width:600px) {
+    .img .infoimg {
+        top: 78%;
+    }
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+.img:hover .infoimg {
+    top: 0;
+    height: 100%;
+    background-color: rgba(65, 105, 225, 0.7);
+}
+
+.abouttext p {
+    padding-bottom: 20px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.bluespan {
+    color: royalblue;
+    font-style: italic;
+}
+
+.photo {
+    /* max-width: 1400px; */
+    height: 60vh;
+    /* overflow: hidden; */
+    background-image: url("../img/photo.jpg");
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
